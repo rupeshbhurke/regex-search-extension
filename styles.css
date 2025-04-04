@@ -1,0 +1,50 @@
+#regex-search-pane {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 300px;
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 99999;
+  font-family: sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+#regex-search-pane[data-theme="light"] {
+  --bg: #ffffff;
+  --fg: #000000;
+}
+#regex-search-pane[data-theme="dark"] {
+  --bg: #1e1e1e;
+  --fg: #f1f1f1;
+}
+#regex-search-pane input {
+  width: 180px;
+}
+#regex-search-pane .regex-header,
+#regex-search-pane .regex-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+#regex-search-pane button {
+  flex: 1;
+  margin: 0 2px;
+}
+#regex-search-pane ul {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+}
+#regex-search-pane li {
+  padding: 3px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+#regex-search-pane li:hover {
+  background: #eee;
+}
